@@ -1,0 +1,112 @@
+@font-face { font-family: Mousey; src: url(mousie.regular.ttf); } 
+@font-face{font-family:cdr; src: url(choco-donut.regular.ttf);}
+
+body{
+background-image: url(images/froggy_bg.jpg);
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 180px;
+padding-left: 180px;
+    color: #a867a8;
+}
+
+main{background-color:#74cc92; }
+a{color: #a867a8;}
+a:hover {color: #f516a7;}
+
+p{
+font-family: cdr,fantasy,sans-serif;
+padding-right: 40px;
+padding-left: 60px;
+padding-top: 20px;
+font-size: 50px;
+ 
+}
+
+h1{text-align: center;color:#f2fff7;
+font-family: Mousey,fantasy,sans-serif;}
+h2{text-align: center;color:#f2fff7;
+font-family: cdr;}
+
+
+h1 span{background-color: #67b582;font-size: 88px;font-weight: normal;}
+h2 span{background-color: #67b582;font-size: 50px;}
+
+
+div.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 150px; 
+         padding-right: 150px;
+    padding-left: 20px;
+
+       
+}
+
+
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
+
+@media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px){
+  th{
+  
+    color:white;
+    margin-bottom:0px;
+  }
+}
+
+
+img{ display: block;margin: 0 auto;width:200px;}
+
+
+.image-container { 
+  width: 200px; 
+
+  background-image: url(images/house_pink.png); 
+  background-size: cover; 
+} 
+ 
+.image-container:hover { 
+  background-image: url(images/house_bluegreen.png); 
+} 
+
+
+.image-container-dos { 
+  width: 300px; 
+    height: 200px;
+
+  background-image: url(images/a_open.png); 
+  background-size: cover; 
+} 
+ 
+.image-container-dos:hover { 
+  background-image: url(images/a_closed.png); 
+} 
+
+.image-container-tres { 
+  width: 220px; 
+ 
+
+  background-image: url(images/flower_p.png); 
+  background-size: cover; 
+} 
+ 
+.image-container-tres:hover { 
+  background-image: url(images/flower_pb.png); 
+} 
+
+
+
+//-----------
+
+
+
+ 

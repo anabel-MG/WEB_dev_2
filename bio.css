@@ -1,0 +1,14 @@
+@font-face { font-family: Mousey; src: url(mousie.regular.ttf); } 
+@font-face{font-family:cdr; src: url(choco-donut.regular.ttf);}
+
+
+
+h1{font-family: Mousey,fantasy,sans-serif;text-align: center;font-size: 88px;font-weight: normal;}
+
+body{padding: 100px;
+background-image: url(images/flower_bg.jpg);color: #910a38;}
+
+section{background-color: #ff70a0;
+padding: 20px;
+font-family: cdr,fantasy,sans-serif;
+font-size:20px ;}

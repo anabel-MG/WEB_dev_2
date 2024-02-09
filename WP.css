@@ -1,0 +1,23 @@
+@media all and (min-width: 481px)
+@media all and (min-width: 769px)
+@media all and (min-width: 1024px) 
+@font-face { font-family:Challenge; src: url(Challenge.OTF); } 
+
+
+
+body{
+    
+background-color: #d9bdff;
+
+color: #ffff; 
+    
+font-family: Challenge, Verdana, Tahoma;
+    
+letter-spacing: 3px;
+padding:30px;
+font-size: 20px;
+
+}
+    
+h1{text-align: center;}
+h2{text-align: center;}
