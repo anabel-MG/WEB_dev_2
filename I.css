@@ -105,6 +105,21 @@ img{ display: block;margin: 0 auto;width:200px;}
 
 
 
+/*ignore this one ( hover only works when this is here )*/
+.image-container-no{
+    width: 220px;
+    background-image: url(images/fruits_1.png);
+    background-size: cover
+}
+/*ignore this one ( hover only works when this is here )*/
+
+.image-container-no:hover{
+    background-image: url(images/fruits_2.png);
+}
+
+/*
+real code 
+*/
 .image-container-cuatro{
     width: 220px;
     background-image: url(images/fruits_1.png);
@@ -114,6 +129,7 @@ img{ display: block;margin: 0 auto;width:200px;}
 .image-container-cuatro:hover{
     background-image: url(images/fruits_2.png);
 }
+   
    
 
 
