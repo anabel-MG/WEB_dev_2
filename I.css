@@ -103,6 +103,20 @@ img{ display: block;margin: 0 auto;width:200px;}
   background-image: url(images/flower_pb.png); 
 } 
 
+
+
+.image-container-cuatro{
+    width: 220px;
+    background-image: url(images/fruits_1.png);
+    background-size: cover
+}
+
+.image-container-cuatro:hover{
+    background-image: url(images/fruits_2.png);
+}
+   
+
+
 @media all and (min-width: 481px) {
 	
 	 nav {
