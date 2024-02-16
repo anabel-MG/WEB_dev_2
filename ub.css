@@ -100,18 +100,16 @@ MEDIA QUERIES!
 You can adjust the min-width numbers below, and add as many new media queries as you need.
 ======================================== */
 
-@media all and (min-width: 200px) {
-	
-	 nav {
+nav {
       display: grid
           /*grid-template-columns:auto auto auto auto;*/
           grid-template-columns:repeat(4, 1fr);
           column-gap:30px;
-               place-items: center;
+     place-items: center;}
 .desktop{
 display: none;
     }
-	 }
+	
 
 }
 
