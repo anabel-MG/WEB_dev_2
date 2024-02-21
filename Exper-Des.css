@@ -1,0 +1,218 @@
+body {
+            font-family:sans-serif;
+            margin: 5px;
+        }
+        header, main, footer {
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+
+body {
+
+  background-color: white;
+  animation-name: colors_Change;
+       animation-delay: 10s;
+  animation-duration: 4s;
+      animation-iteration-count: infinite;
+    
+
+}
+/* screen changes colors after 10 seconds for an infinate number of times*/
+@keyframes colors_Change {
+  0% {
+    background-color: white;
+  }
+  30% {
+    background-color: white;
+  }
+  33.33% {
+    background-color: red;
+  }
+  40% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  66.67% {
+    background-color: green;
+  }
+  83.33% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+/* screen spins once after 14 seconds*/
+.spin{animation-name:spinning_screen;
+    animation-duration: 5s;
+ animation-iteration-count:5;
+    animation-delay: 14s;
+}
+
+@keyframes spinning_screen{
+    0% {transform: rotate(0deg);}
+     100% {transform: rotate(360deg);}
+} 
+/* centers items */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+ 
+}
+
+
+
+
+
+
+/* moves selected text up and down*/
+div.upndown {
+
+  position: relative;
+  animation: moveuad 4s infinite;
+           animation-delay: 7s;
+
+}
+
+@keyframes moveuad {
+  0%   {top: 0px; }
+  25%  {top: 200px;  }
+
+  50%  {top: 200px; }
+  65%  {top: 0px;}    
+  75%  {top: -200px;  }
+  85%  {top: -200px;  }
+  100% {top: 0px;  0px; }
+}
+
+/* moves selected text down once*/
+h1 {
+  position: relative;
+    
+  animation:mymove 7s ease-in-out forwards; /* Use forwards to keep the final state after animation completion */
+}
+
+@keyframes mymove {
+  0%   {top: 0px;  width: 500px;}
+    30%{top: 0px;  width: 500px;}
+    
+  100% {top: 700px;  width: 100px;}
+}
+
+/* moves figure around really fast*/
+div.a {
+   width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  animation-delay: 8s;
+  animation-name: cant_catch_me;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background-size: cover; /* Ensure the image covers the entire background */
+}
+
+@keyframes cant_catch_me {
+  0%   {background-color: black; background-image: url(images/smiley2.png); left: 0px; top: 0px;}
+  25%  {background-color: whitesmoke; background-image: url(images/smiley1.png); left: 180px; top: 0px;}
+  50%  {background-color: black; background-image: url(images/smiley2.png); left: 180px; top: 180px;}
+  75%  {background-color: whitesmoke; background-image: url(images/smiley1.png); left: 0px; top: 180px;}
+  100% {background-color: black; background-image: url(images/smiley2.png); left: 0px; top: 0px;}
+}
+
+div.b {
+ width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  animation-delay: 5s;
+  animation-name: moving_around;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-size: cover; /* Ensure the image covers the entire background */
+}
+
+@keyframes moving_around {
+  0%   {background-color: black; background-image: url(images/smiley2.png); left: 0px; top: 0px;}
+  25%  {background-color: whitesmoke; background-image: url(images/smiley1.png); left: 200px; top: 0px;}
+  50%  {background-color: black; background-image: url(images/smiley2.png); left: 200px; top: 200px;}
+  75%  {background-color: whitesmoke; background-image: url(images/smiley1.png); left: 0px; top: 200px;}
+  100% {background-color: black; background-image: url(images/smiley2.png); left: 0px; top: 0px;}
+}
+
+.fade-out {
+  animation: fadeOut ease 6s forwards;
+
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn ease 20s forwards;
+
+ 
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+    50%{ opacity: 0}
+    
+    80%{opacity: 0.5}
+  100% {
+    opacity:1;
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+-----------------------------------------------
+@media all and (min-width: 481px) {
+	
+	
+}  closes 481px+ 
+
+
+
+ Minimum width for laptops. 
+@media all and (min-width: 769px) {
+	
+
+}  closes 769px+ 
+
+
+
+Minimum width for desktop screens. 
+@media all and (min-width: 1024px) {
+   
+    }
+}
+	
+ closes 1024px+ 
