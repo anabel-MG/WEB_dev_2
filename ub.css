@@ -19,6 +19,20 @@ section{ background-color: white;}
 .contact
 {font-size: 3vw;}
 
+nav.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 10px;
+    font-family:  bananna,fantasy,sans-serif;
+   
+}
+
+
+
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
