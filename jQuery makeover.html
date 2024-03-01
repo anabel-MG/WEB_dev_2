@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>jQuery_makeover</title>
+	
+	<link rel="stylesheet" href="jqM.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+      <header> <h1>Choosing Colors</h1></header>
+      
+      
+      
+      <button id="original">Original </button>
+      <button id="Mode1">Black Light Mode </button>
+            <button id="Mode2">Pastel Mode </button>
+             <button id="Mode3">Dark Mode </button>
+            <button id="Mode4">Natural Mode </button>
+
+
+      
+<main>
+<div class="grid-container">
+    
+      
+   <div id="item1"> <img src="images/drawing-gif.gif"> </div>
+   
+    <div id="item2">
+    <p id="primero">
+        Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media. For these demonstrations, I've selected four color schemes: neon (or blacklight, for a more playful name :D), featuring highly saturated colors; pastel, incorporating lighter, soft hues; dark, as the name suggests, using darker tones; and natural, which embraces colors that are neither too light nor too dark—often inspired by nature.</p>
+  
+    <p id="dos"> &nbsp; </p>
+    
+ </div>
+    
+    
+    <div id="item3"><img src="images/tph.png"></div>
+    
+        <div id="item4"><img src="images/tph.png"></div>
+
+    
+    
+    
+    
+    
+    
+
+    </div>
+      </main>
+
+  </div><!-- close "container" -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+
+ 
+  /* $("h1").click(function() {});//close.click()
+        
+       $("p.hidden").slideToggle() });//close.click()
+    */
+    
+   /*  $("p.special").hide();
+    
+        $("button#uno").click(function(){
+            $("p.special").fadeIn();
+                    });//close button uno()
+        
+    $("button#dos").click(function(){
+          //  $("body").css("background","blue");
+        $("body").addClass("idkwhattoname");
+        
+                    });//close button dos()
+        
+    */
+    
+    
+$("button#original").click(function(){
+    $("body").removeClass().addClass("original");
+    
+    $("h1").text("Choosing Colors");
+    $("p#primero").text("Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media. For these demonstrations, I've selected four color schemes: neon (or blacklight, for a more playful name :D), featuring highly saturated colors; pastel, incorporating lighter, soft hues; dark, as the name suggests, using darker tones; and natural, which embraces colors that are neither too light nor too dark—often inspired by nature.");
+    
+    $("p#dos").text("");
+    
+    $("div#item1 img").attr("src", "images/drawing-gif.gif");
+     $("div#item3 img").attr("src", "images/tph.png");
+     $("div#item4 img").attr("src", "images/tph.png");
+
+
+    
+});//closeorgbutton
+
+$("button#Mode1").click(function(){
+    $("body").removeClass().addClass("black_Light");
+    
+    $("h1").text("Neon");
+    
+    
+    $("p#primero").text("Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media:  Neon (or blacklight, for a more playful name :D), featuring highly saturated colors.");
+    
+        $("p#dos").text("These colors are often really saturated and can be used to show fun or boldness.However, this is not everything you can do, you can actually use it to make your object pop more as coloring your object with these bright colors will make them stand out or by using these colors to fill in the bacground and the object a more desaturated tone. It can also be used to give an eerie feeling as you can create a creepy drawing or something of that nature and color it with bright colors, the unexpected image with clors we might associate with brightful or even childlike feelings will make your creepy drawing feel off.");
+
+ $("div#item1 img").attr("src", "images/neon.png");
+        $("div#item3 img").attr("src", "images/ys-saturated.jpg");
+    $("div#item4 img").attr("src", "images/pixel-saturated.jpg");
+
+
+  // $("#bg").attr('src',"img/picture1.jpg");
+    
+});//closebutton1
+
+    
+     $("button#Mode2").click(function(){
+         $("body").removeClass().addClass("pastel");
+         
+             $("h1").text("Pastel");
+         $("p#primero").text("Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media. pastel, incorporating lighter, soft hues");
+         
+             $("p#dos").text("I like to use pastels for more cheery or cute pieces, pastels go reallt well together and can also be used to add a fun feeling to the piece with out using too many bold colors.");
+
+ $("div#item1 img").attr("src", "images/pastel.png");
+
+             $("div#item3 img").attr("src", "images/sb-pastel.jpg");
+    $("div#item4 img").attr("src", "images/mg-pastel.jpg");
+         
+     });//closebutton2
+    
+ $("button#Mode3").click(function(){
+         $("body").removeClass().addClass("dark");
+     
+         $("h1").text("Dark");
+     $("p#primero").text("Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media:dark, as the name suggests, using darker tones.");
+     
+         $("p#dos").text("I personally like using dark colors for a scene in a darker setting which will obviously include more dark colors.I also use them to create a still environment , it might give out sort of an eerie feeling but this time utilizing shadows and darker tomes.");
+
+ $("div#item1 img").attr("src", "images/dark.png");
+         $("div#item3 img").attr("src", "images/mush-dark.jpg");
+     $("div#item4 img").attr("src", "images/tph.png");
+
+     
+     });//closebutton3   
+    
+    
+    $("button#Mode4").click(function(){
+         $("body").removeClass().addClass("natural");
+        
+            $("h1").text("Natural");
+        $("p#primero").text("Color can breathe life into any form of media, whether it's a website, poster, or drawing. In this context, I'll showcase examples using my own artwork, focusing on four distinct color combinations or palettes to illustrate and explain how color can influence the mood of media:natural, which embraces colors that are neither too light nor too dark—often inspired by nature.");
+        
+            $("p#dos").text("When working with natural colors it's good to think about colors we might find in nature but it's not the only thing that can be achieved in a drawing. Natural colors can help a pieace have a feeling of calmness and can make people feel good.");
+        
+        
+        
+ $("div#item1 img").attr("src", "images/natural.png");
+
+  $("div#item3 img").attr("src", "images/rain-natural.jpg");
+     $("div#item4 img").attr("src", "images/tph.png");
+        
+     });//closebutton4  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}); //close .ready()
+      
+</script>
+
+</body>
+	
+</html> 
