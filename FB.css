@@ -1,0 +1,470 @@
+@font-face { font-family: star; src: url(LilyClover-X3vDj.ttf); } 
+@font-face { font-family: lovely; src: url(Potato_Truffles.ttf); } 
+
+
+body{background-color: 
+    #e6abf5;
+}
+
+p{font-size: 20px;
+color: #faf5d7;
+font-family:  lovely,fantasy,sans-serif;
+line-height: 35px;
+
+}
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!!!!!!!!!!!!
+======================================== */
+
+
+
+@media all and (min-width: 320px) {
+    
+  
+   nav {
+      display: grid;
+          /*grid-template-columns:auto auto auto auto;*/
+          grid-template-columns:repeat(4, 1fr);
+          column-gap:30px;
+               place-items: center;}
+	
+  
+.desktop{
+display: none;}
+    .mobile{
+        
+        display: block;
+    }
+    
+     .grid-intro {
+  display: grid;
+      grid-template-rows: repeat(2, fr);
+      grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+    column-gap:100px;
+    font-size: 10;
+}
+
+.grid-item-iiii {
+
+  border: 1px solid white;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+    
+    
+    .center_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+    
+}
+    
+    .box{
+  width: 100%;
+     
+    }
+    
+    .logo-size{
+    
+    width: 50%;
+    } 
+    
+    
+    
+         .grid-home {
+  display: grid;
+      grid-template-rows: repeat(4, fr);
+      grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+    column-gap:100px;
+    font-size: 10;
+               
+
+}
+
+.grid-home-item {
+
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+       opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add transition for smooth fading */
+
+}
+    
+    .baked-good-size{
+         width: 100%;
+             margin-bottom: 2em;
+    }
+    
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+.collapsible {
+background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100px; /* Change this value to your desired width */
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+   content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+   padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+   width: 100px;
+
+}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    
+    
+}/*CLOSE 32O */
+
+
+
+
+
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 370px) {
+    
+
+	
+	 nav {
+      display: grid;
+          /*grid-template-columns:auto auto auto auto;*/
+          grid-template-columns:repeat(4, 1fr);
+          column-gap:30px;
+               place-items: center;}
+	
+  
+.desktop{
+display: none;}
+	
+    /* for  */
+     .grid-intro {
+  display: grid;
+      grid-template-rows: repeat(2, fr);
+      grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+    column-gap:100px;
+    font-size: 10;
+}
+
+    
+    header{
+        
+    }
+    
+.grid-item-iiii {
+
+  border: 1px solid white;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+    
+    
+    .center_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+    
+}
+    
+    .box{
+  width: 100%;
+     
+    }
+    
+    
+    /* for home page, baked goods  */
+       .grid-home {
+  display: grid;
+      grid-template-rows: repeat(1, fr);
+      grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+    column-gap:100px;
+    font-size: 10;
+           
+  
+
+}
+ .overlay {
+  position: absolute;
+  top: 50%; /* Position the overlay in the middle vertically */
+  left: 50%; /* Position the overlay in the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the overlay */
+  width: 90%; /* Adjust the width of the overlay */
+  height: 90%; /* Adjust the height of the overlay */
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to bottom, #ffffff,#d7cfff);
+  border-radius: 50%; /* Change the border-radius to make the overlay a circle */
+}
+    
+    
+.grid-home-item:hover .overlay {
+  opacity: 1; /* Make overlay visible on hover */
+}
+    
+
+.grid-home-item {
+
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+       opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add transition for smooth fading */
+    position: relative;
+    
+
+}
+    
+    .baked-good-size{
+         width: 100%;
+             margin-bottom: 2em;
+        display: block;
+        height: auto; 
+    }
+    
+   .text {
+  color:#8027c4;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+    
+    .baked-good-size-tkw{width: 20%;
+             margin-bottom: 2em;}
+     
+ 
+    
+} /* closes 370px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    
+    .desktop{
+display: block;    }
+    .mobile{
+display:none;}
+	
+    
+    body{background-color: #e6abf5;
+padding: 10px;
+    margin: 10px;
+    }
+    
+    .h{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    border-radius: 9px; 
+    background-color:#faf5d7;
+    font-size: 2vw;
+}
+
+    .intro{
+        color: #f9ebfc;
+       margin-bottom: 10px;
+        padding-left: 30px;
+            padding-right: 30px;
+        font-size: 22px;
+    }
+.Detail {
+     border-radius: 2px; 
+    border: 2px dotted #e3d9a3; 
+    border-width: 8px;
+    padding: 8px 8px;
+    font-family:  star,fantasy,sans-serif;}
+
+
+     nav {
+        
+      display: grid;
+          /*grid-template-columns:auto auto auto auto;*/
+         grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+          column-gap:30px;
+         grid-row-gap:30px;
+              place-items: center;}
+    
+    .grid-intro {
+  display: grid;
+      grid-template-rows: repeat(2, fr);
+      grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+    column-gap:100px;
+    font-size: 10;
+        
+}
+
+.grid-item-iiii {
+
+  border: 1px solid white;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+    
+}
+
+
+    .center_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    margin-bottom: 6em;
+}
+    
+ 
+ .box{
+  width: 100%;
+     
+    }
+    
+.logo-size{
+    
+    width: 50%;
+    }
+    
+    
+    .grid-container-ref {
+  display: grid;
+  column-gap: 50px;
+grid-row-gap: 50px;
+  grid-template-columns: auto auto ;
+  padding: 10px;
+}
+
+.grid-item-ref {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+    ---------------
+
+  .baked-good-size{
+         width: 60%;
+             margin-bottom: 2em;
+    }
+   ---------------- 
+
+ .tkw {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+
+        .tkw div {
+            text-align: center;
+        }
+    
+.grid-tkw {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item-tkw {
+  
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+======================
+
+
+  
+} /* closes 769px+ */
+
+----------------------------------------------------------------------------------
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	.desktop{
+display: block;    }
+	.mobile{
+display:none;}
+
+
+   
+     nav {
+           display: grid;
+          /*grid-template-columns:auto auto auto auto;*/
+         grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+          column-gap:30px;
+      place-items: center;
+    }
+    
+
+    
+}
+
+	
+ /* closes 1024px+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
